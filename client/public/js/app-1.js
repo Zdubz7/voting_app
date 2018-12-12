@@ -1,9 +1,14 @@
-class ProductList extends RTCIceCandidate.Component {
+class ProductList extends React.Component {
     render() {
-        return {
-            <div className='ui unstackable items'>
-            Hello, friend! I am a basic React component.
-            </div>
-        );
+      return (
+        <div className='ui unstackable items'>
+          Hello, friend! I am a basic React component.
+        </div>
+      );
     }
-}
+  }
+  
+  ReactDOM.render(
+    <ProductList />,
+    document.getElementById('content')
+  );
